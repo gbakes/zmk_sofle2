@@ -98,7 +98,7 @@
 &trans  &trans  &trans    &kp UP_ARROW  &trans     &trans                    &trans  &trans      &trans            &trans      &trans  &trans
 &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans                    &trans  &kp K_NEXT  &kp K_PLAY_PAUSE  &kp K_PREV  &trans  &trans
 &trans  &trans  &trans    &trans        &trans     &trans  &trans    &trans  &trans  &trans      &trans            &trans      &trans  &trans
-                &trans    &trans        &trans     &to 0   &trans    &trans  &to 2   &trans      &trans            &trans
+                &trans    &trans        &trans     &to 0  &trans     &trans  &to 2   &trans      &trans            &trans
             >;
 
             sensor-bindings =
