@@ -2,6 +2,14 @@
 
 directory="/Volumes/NICENANO"
 
+echo "Waiting for board to enter bootloader mode"
+
+while [ ! -d "$directory" ]; do
+    sleep 1  # Adjust the sleep duration based on your needs
+done
+
+echo "Board detected."
+
 # Prompt 
 read -p "Which side is connected? (left/right): " user_input
 

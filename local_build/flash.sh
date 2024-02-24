@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd /Users/georgebaker/Documents/2.\ Projects/zmk_sofle2/local_build
 sh download_artifact.sh
 directory="/Volumes/NICENANO"
 
@@ -15,9 +15,6 @@ else
 fi
 
 echo "Starting to flash first board"
-
 sh load_firmware.sh
-
 echo "Starting to flash second board"
-
 sh load_firmware.sh
