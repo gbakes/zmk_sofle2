@@ -13,7 +13,6 @@
 #define MEDIA   2
 
 / {
-
     behaviors {
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
@@ -69,7 +68,7 @@
 &kp ESC    &kp Q   &kp W         &kp E        &kp R             &kp T                                   &kp Y   &kp U            &kp I             &kp O         &kp P     &kp BSPC
 &kp TAB    &kp A   &hmr LCTRL S  &hml LALT D  &hml RIGHT_GUI F  &kp G                                   &kp H   &hmr LEFT_GUI J  &hmr RIGHT_ALT K  &hmr RCTRL L  &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X         &kp C        &kp V             &kp B          &kp C_MUTE    &none      &kp N   &kp M            &kp COMMA         &kp DOT       &kp FSLH  &kp RSHIFT
-                   &kp LGUI      &kp LALT     &kp LCTRL         &kp BACKSPACE  &kp RET       &kp SPACE  &to 1  &kp RCTRL        &kp RALT          &kp RGUI
+                   &kp LGUI      &kp LALT     &kp LCTRL         &kp BACKSPACE  &kp RET       &kp SPACE  &to 1   &kp RCTRL        &kp RALT          &kp RGUI
             >;
 
             sensor-bindings =
@@ -99,7 +98,7 @@
 &trans  &trans  &trans    &kp UP_ARROW  &trans     &trans                    &trans  &trans      &trans            &trans      &trans  &trans
 &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans                    &trans  &kp K_NEXT  &kp K_PLAY_PAUSE  &kp K_PREV  &trans  &trans
 &trans  &trans  &trans    &trans        &trans     &trans  &trans    &trans  &trans  &trans      &trans            &trans      &trans  &trans
-                &trans    &trans        &trans     &trans  &trans    &trans  &trans  &trans      &trans            &trans
+                &trans    &trans        &trans     &to 0   &trans    &trans  &to 2   &trans      &trans            &trans
             >;
 
             sensor-bindings =
