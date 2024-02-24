@@ -1,0 +1,1 @@
+curl -s -H "Authorization: Bearer YOUR_TOKEN" "https://api.github.com/repos/gbakes/zmk_sofle2/actions/runs?event=push&status=success" | jq -r .workflow_runs[0].id
