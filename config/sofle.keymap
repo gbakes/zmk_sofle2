@@ -52,12 +52,12 @@
 
         boot_left {
             bindings = <&bootloader>;
-            key-positions = <42 36>;
+            key-positions = <36 5>;
         };
 
         boot_right {
             bindings = <&bootloader>;
-            key-positions = <43 49>;
+            key-positions = <49 6>;
         };
     };
 
@@ -99,7 +99,7 @@
         symbol {
             display-name = "symbol";
 
-             /*
+            /*
              * SYMBOL
              * ,-----------------------------------------.                    ,-----------------------------------------.
              * |      |      |      |      |      |   *  |                    |   &  |   <  |   !  |   >  |   =  |      |
@@ -131,7 +131,7 @@
         media {
             display-name = "media";
 
-             /*
+            /*
              * MEDIA
              * ,-----------------------------------------.                    ,-----------------------------------------.
              * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
