@@ -27,6 +27,11 @@ case "$user_input_lower" in
     left|l)
         echo "left side chosen"
 
+        while [ ! -d "$directory" ]; do
+            sleep 1  # Adjust the sleep duration based on your needs
+            echo "Waiting for board to enter bootloader mode"
+        done
+
         left_firmware_file=$(ls *left*"$file_extension" | head -n 1)
 
         if [ -n "$left_firmware_file" ]; then
@@ -38,7 +43,13 @@ case "$user_input_lower" in
         fi
         ;;
     right|r)
-         echo "right side chosen"
+        echo "right side chosen"
+
+        while [ ! -d "$directory" ]; do
+            sleep 1  # Adjust the sleep duration based on your needs
+            echo "Waiting for board to enter bootloader mode"
+        done
+
 
         right_firmware_file=$(ls *right*"$file_extension" | head -n 1)
 

@@ -18,3 +18,4 @@ echo "Starting to flash first board"
 sh load_firmware.sh
 echo "Starting to flash second board"
 sh load_firmware.sh
+rm *.uf2

@@ -124,8 +124,8 @@
 
             bindings = <
 &trans  &kt F1  &trans               &trans           &trans                  &kp ASTRK                         &kp AMPS     &kp LESS_THAN               &kp EXCLAMATION   &kp GREATER_THAN              &kp EQUAL      &trans
-&trans  &trans  &kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3         &kp HASH                          &kp PERCENT  &kp LEFT_BRACE              &kp PERIOD        &kp RIGHT_BRACE               &kp MINUS      &trans
-&trans  &trans  &hml LCTRL NUMBER_4  &hml LALT N5     &hml LEFT_GUI NUMBER_6  &kp PIPE                          &kp AT       &hmr RGUI LEFT_PARENTHESIS  &hmr RALT PERIOD  &hmr RCTRL RIGHT_PARENTHESIS  &kp KP_PLUS    &trans
+&trans  &trans  &kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3         &kp HASH                          &kp PERCENT  &kp LEFT_BRACE              &kp BSLH          &kp RIGHT_BRACE               &kp MINUS      &trans
+&trans  &trans  &hml LCTRL NUMBER_4  &hml LALT N5     &hml LEFT_GUI NUMBER_6  &kp PIPE                          &kp AT       &hmr RGUI LEFT_PARENTHESIS  &hmr RALT FSLH    &hmr RCTRL RIGHT_PARENTHESIS  &kp KP_PLUS    &trans
 &trans  &trans  &kp KP_NUMBER_7      &kp KP_NUMBER_8  &kp KP_NUMBER_9         &kp UNDERSCORE  &trans    &trans  &kp CARET    &kp LBKT                    &kp QMARK         &kp RIGHT_BRACKET             &kp KP_DIVIDE  &trans
                 &trans               &trans           &trans                  &to 0           &trans    &trans  &to 2        &trans                      &trans            &trans
             >;
@@ -143,23 +143,23 @@
              * ,-----------------------------------------.                    ,-----------------------------------------.
              * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
              * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-             * |      |      |      |  Up  |      |      |                    |      |      |      |      |      |      |
+             * |      |      |      |      |      |      |                    |      |      |  Up  |      |      |      |
              * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-             * |      |      | Left | Down |Right |      |-------.    ,-------|      | ⌘PRV | ⌥PLY | ⌃NXT |      |      |
+             * |      |      | ⌘PRV | ⌥PLY | ⌃NXT |      |-------.    ,-------|      | Left | Down |Right |      |      |
              * |------+------+------+------+------+------|  MUTE |    |       |------+------+------+------+------+------|
              * |      |      |      |      |      |      |-------|    |-------|      |      |      |      |      |      |
              * `-----------------------------------------/       /     \      \-----------------------------------------'
-             *            |   ⌘  |  ⌥   |  ⌃   | &to1 | /Enter  /       \Space \  |RAISE |  ⌃   |  ⌥   |  ⌘   |
+             *            |   ⌘  |  ⌥   |  ⌃   | &to1 | /Enter  /       \Space \  | to2  |  ⌃   |  ⌥   |  ⌘   |
              *            |      |      |      |      |/       /         \      \ |      |      |      |      |
              *            `----------------------------------'           '------''---------------------------'
              */
 
             bindings = <
-&trans  &trans  &trans    &trans        &trans     &trans                    &trans  &trans            &trans          &trans             &trans  &trans
-&trans  &trans  &trans    &kp UP_ARROW  &trans     &trans                    &trans  &trans            &trans          &trans             &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans                    &trans  &hmr RGUI C_NEXT  &hmr RALT C_PP  &hmr RCTRL C_NEXT  &trans  &trans
-&trans  &trans  &trans    &trans        &trans     &trans  &trans    &trans  &trans  &trans            &trans          &trans             &trans  &trans
-                &trans    &trans        &trans     &to 0   &trans    &trans  &to 2   &trans            &trans          &trans
+&trans  &trans  &trans             &trans              &trans             &trans                    &trans  &trans     &trans    &trans     &trans  &trans
+&trans  &trans  &trans             &trans              &trans             &trans                    &trans  &trans     &kp UP    &trans     &trans  &trans
+&trans  &trans  &hml LGUI C_PREV   &hml LALT C_PP      &hml LCTRL C_NEXT  &trans                    &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans             &trans              &trans             &trans  &trans    &trans  &trans  &trans     &trans    &trans     &trans  &trans
+                &trans             &trans              &trans             &to 0   &trans    &trans  &to 2   &trans     &trans    &trans
             >;
 
             sensor-bindings =
