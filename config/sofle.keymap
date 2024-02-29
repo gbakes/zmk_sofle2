@@ -40,6 +40,13 @@
             hold-trigger-on-release;
             flavor = "balanced";
         };
+
+        double_tap: double_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOUBLE_TAP";
+            #binding-cells = <0>;
+            bindings = <&kp RSHIFT>, <&caps_word>;
+        };
     };
 
     combos {
@@ -77,7 +84,7 @@
 &kp GRAVE  &kp N1  &kp N2        &kp N3       &kp N4            &kp N5                                  &kp N6  &kp N7           &kp N8            &kp N9        &kp N0    &kp MINUS
 &kp ESC    &kp Q   &kp W         &kp E        &kp R             &kp T                                   &kp Y   &kp U            &kp I             &kp O         &kp P     &kp BSPC
 &kp TAB    &kp A   &hmr LCTRL S  &hml LALT D  &hml RIGHT_GUI F  &kp G                                   &kp H   &hmr LEFT_GUI J  &hmr RIGHT_ALT K  &hmr RCTRL L  &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X         &kp C        &kp V             &kp B          &kp C_MUTE    &none      &kp N   &kp M            &kp COMMA         &kp DOT       &kp FSLH  &kp RSHIFT
+&kp LSHFT  &kp Z   &kp X         &kp C        &kp V             &kp B          &kp C_MUTE    &none      &kp N   &kp M            &kp COMMA         &kp DOT       &kp FSLH  &double_tap
                    &kp LGUI      &kp LALT     &kp LCTRL         &kp BACKSPACE  &kp RET       &kp SPACE  &to 1   &kp RCTRL        &kp RALT          &kp RGUI
             >;
 
