@@ -152,11 +152,11 @@
              */
 
             bindings = <
-&trans  &none  &none             &none           &none              &none                              &none  &none     &none     &none      &none  &trans
-&trans  &none  &none             &none           &none              &none                              &none  &none     &kp UP    &none      &none  &trans
-&trans  &none  &hml LGUI C_PREV  &hml LALT C_PP  &hml LCTRL C_NEXT  &none                              &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &trans
-&trans  &none  &none             &none           &none              &none  &bootloader    &bootloader  &none  &none     &none     &none      &none  &trans
-               &trans            &trans          &trans             &to 0  &trans         &trans       &to 2  &trans    &trans    &trans
+&trans  &none  &none              &none           &none             &none                              &none  &none     &none     &none      &none  &trans
+&trans  &none  &none              &none           &none             &none                              &none  &none     &kp UP    &none      &none  &trans
+&trans  &none  &hml LCTRL C_PREV  &hml LALT C_PP  &hml LGUI C_NEXT  &none                              &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &trans
+&trans  &none  &none              &none           &none             &none  &bootloader    &bootloader  &none  &none     &none     &none      &none  &trans
+               &trans             &trans          &trans            &to 0  &trans         &trans       &to 2  &trans    &trans    &trans
             >;
 
             sensor-bindings =
