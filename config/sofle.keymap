@@ -113,11 +113,11 @@
              */
 
             bindings = <
-&trans  &kt F1  &none                &none            &none                   &kp ASTRK                       &kp AMPS     &kp LESS_THAN               &kp EXCLAMATION  &kp GREATER_THAN              &kp EQUAL      &trans
-&trans  &none   &kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3         &kp HASH                        &kp PERCENT  &kp LEFT_BRACE              &kp BSLH         &kp RIGHT_BRACE               &kp MINUS      &trans
-&trans  &kp N0  &hml LCTRL NUMBER_4  &hml LALT N5     &hml LEFT_GUI NUMBER_6  &kp PIPE                        &kp AT       &hmr RGUI LEFT_PARENTHESIS  &hmr RALT FSLH   &hmr RCTRL RIGHT_PARENTHESIS  &kp KP_PLUS    &trans
-&trans  &none   &kp KP_NUMBER_7      &kp KP_NUMBER_8  &kp KP_NUMBER_9         &kp UNDERSCORE  &none    &none  &kp CARET    &kp LBKT                    &kp QMARK        &kp RIGHT_BRACKET             &kp KP_DIVIDE  &trans
-                &trans               &trans           &trans                  &to 0           &none    &none  &to 2        &trans                      &trans           &trans
+&trans  &kt F1  &none                &none            &none                   &kp ASTRK                         &kp AMPS     &kp LESS_THAN               &kp EXCLAMATION  &kp GREATER_THAN              &kp EQUAL      &trans
+&trans  &none   &kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3         &kp HASH                          &kp PERCENT  &kp LEFT_BRACE              &kp BSLH         &kp RIGHT_BRACE               &kp MINUS      &trans
+&trans  &kp N0  &hml LCTRL NUMBER_4  &hml LALT N5     &hml LEFT_GUI NUMBER_6  &kp PIPE                          &kp AT       &hmr RGUI LEFT_PARENTHESIS  &hmr RALT FSLH   &hmr RCTRL RIGHT_PARENTHESIS  &kp KP_PLUS    &trans
+&trans  &none   &kp KP_NUMBER_7      &kp KP_NUMBER_8  &kp KP_NUMBER_9         &kp UNDERSCORE  &none     &none   &kp CARET    &kp LBKT                    &kp QMARK        &kp RIGHT_BRACKET             &kp KP_DIVIDE  &trans
+                &trans               &trans           &trans                  &to 0           &trans    &trans  &to 2        &trans                      &trans           &trans
             >;
 
             sensor-bindings =
