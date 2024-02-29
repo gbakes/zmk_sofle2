@@ -41,18 +41,32 @@
             flavor = "balanced";
         };
 
-        dt_capsword: dt_capsword {
+        dt_r_capsw: dt_r_capsw {
             compatible = "zmk,behavior-tap-dance";
-            label = "DT_CAPSWORD";
+            label = "DT_R_CAPSW";
             #binding-cells = <0>;
             bindings = <&kp RSHIFT>, <&caps_word>;
         };
 
-        dt_slash_backslash: dt_slash_backslash {
+        dt_sl_bs: dt_sl_bs {
             compatible = "zmk,behavior-tap-dance";
-            label = "DT_SLASH_BACKSLASH";
+            label = "DT_SL_BS";
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp BSLH>;
+        };
+
+        dt_l_capsw: dt_l_capsw {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_L_CAPSW";
+            #binding-cells = <0>;
+            bindings = <&kp LSHFT>, <&caps_word>;
+        };
+
+        dt_space_enter: dt_space_enter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_SPACE_ENTER";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp RET>;
         };
     };
 
@@ -88,11 +102,11 @@
              */
 
             bindings = <
-&kp GRAVE     &kp N1  &kp N2        &kp N3       &kp N4            &kp N5                                  &kp N6  &kp N7           &kp N8            &kp N9        &kp N0    &kp MINUS
-&kp ESC       &kp Q   &kp W         &kp E        &kp R             &kp T                                   &kp Y   &kp U            &kp I             &kp O         &kp P     &kp BSPC
-&kp TAB       &kp A   &hmr LCTRL S  &hml LALT D  &hml RIGHT_GUI F  &kp G                                   &kp H   &hmr LEFT_GUI J  &hmr RIGHT_ALT K  &hmr RCTRL L  &kp SEMI  &kp SQT
-&dt_capsword  &kp Z   &kp X         &kp C        &kp V             &kp B          &kp C_MUTE    &none      &kp N   &kp M            &kp COMMA         &kp DOT       &kp FSLH  &dt_capsword
-                      &kp LGUI      &kp LALT     &kp LCTRL         &kp BACKSPACE  &kp RET       &kp SPACE  &to 1   &kp RCTRL        &kp RALT          &kp RGUI
+&kp GRAVE    &kp N1  &kp N2        &kp N3       &kp N4            &kp N5                                 &kp N6  &kp N7           &kp N8            &kp N9        &kp N0    &kp MINUS
+&kp ESC      &kp Q   &kp W         &kp E        &kp R             &kp T                                  &kp Y   &kp U            &kp I             &kp O         &kp P     &kp BSPC
+&kp TAB      &kp A   &hmr LCTRL S  &hml LALT D  &hml RIGHT_GUI F  &kp G                                  &kp H   &hmr LEFT_GUI J  &hmr RIGHT_ALT K  &hmr RCTRL L  &kp SEMI  &kp SQT
+&dt_l_capsw  &kp Z   &kp X         &kp C        &kp V             &kp B   &kp C_MUTE    &none            &kp N   &kp M            &kp COMMA         &kp DOT       &kp FSLH  &dt_r_capsw
+                     &kp LGUI      &kp LALT     &kp LCTRL         &to 0   &kp DELETE    &dt_space_enter  &to 1   &kp RCTRL        &kp RALT          &kp RGUI
             >;
 
             sensor-bindings =
@@ -120,11 +134,11 @@
              */
 
             bindings = <
-&trans  &kt F1  &none                &none            &none                   &kp ASTRK                         &kp AMPS     &kp LESS_THAN               &kp EXCLAMATION      &kp GREATER_THAN              &kp QUESTION   &trans
-&trans  &kp N0  &kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3         &kp HASH                          &kp PERCENT  &kp LEFT_BRACE              &dt_slash_backslash  &kp RIGHT_BRACE               &kp MINUS      &trans
-&trans  &none   &hml LCTRL NUMBER_4  &hml LALT N5     &hml LEFT_GUI NUMBER_6  &kp PIPE                          &kp AT       &hmr RGUI LEFT_PARENTHESIS  &hmr RALT PERIOD     &hmr RCTRL RIGHT_PARENTHESIS  &kp KP_PLUS    &trans
-&trans  &none   &kp KP_NUMBER_7      &kp KP_NUMBER_8  &kp KP_NUMBER_9         &kp UNDERSCORE  &none     &none   &kp CARET    &kp LBKT                    &kp EQUAL            &kp RIGHT_BRACKET             &kp KP_DIVIDE  &trans
-                &trans               &trans           &trans                  &to 0           &trans    &trans  &to 2        &trans                      &trans               &trans
+&trans  &kt F1  &none                &none            &none                   &kp ASTRK                         &kp AMPS     &kp LESS_THAN               &kp EXCLAMATION   &kp GREATER_THAN              &kp QUESTION   &trans
+&trans  &kp N0  &kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3         &kp HASH                          &kp PERCENT  &kp LEFT_BRACE              &dt_sl_bs         &kp RIGHT_BRACE               &kp MINUS      &trans
+&trans  &none   &hml LCTRL NUMBER_4  &hml LALT N5     &hml LEFT_GUI NUMBER_6  &kp PIPE                          &kp AT       &hmr RGUI LEFT_PARENTHESIS  &hmr RALT PERIOD  &hmr RCTRL RIGHT_PARENTHESIS  &kp KP_PLUS    &trans
+&trans  &none   &kp KP_NUMBER_7      &kp KP_NUMBER_8  &kp KP_NUMBER_9         &kp UNDERSCORE  &none     &none   &kp CARET    &kp LBKT                    &kp EQUAL         &kp RIGHT_BRACKET             &kp KP_DIVIDE  &trans
+                &trans               &trans           &trans                  &to 0           &trans    &trans  &to 2        &trans                      &trans            &trans
             >;
 
             sensor-bindings =
