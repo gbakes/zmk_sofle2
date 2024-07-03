@@ -104,9 +104,9 @@
             bindings = <
 &kp GRAVE    &kp N1  &kp N2        &kp N3       &kp N4            &kp N5                                    &kp N6  &kp N7           &kp N8            &kp N9        &kp N0    &mt C_POWER MINUS
 &kp ESC      &kp Q   &kp W         &kp E        &kp R             &kp T                                     &kp Y   &kp U            &kp I             &kp O         &kp P     &kp BSPC
-&kp TAB      &kp A   &hmr LCTRL S  &hml LALT D  &hml RIGHT_GUI F  &kp G                                     &kp H   &hmr LEFT_GUI J  &hmr RIGHT_ALT K  &hmr RCTRL L  &kp SEMI  &kp SQT
-&dt_l_capsw  &kp Z   &kp X         &kp C        &kp V             &kp B   &kp C_MUTE       &none            &kp N   &kp M            &kp COMMA         &kp DOT       &kp FSLH  &dt_r_capsw
-                     &kp LGUI      &kp LALT     &kp LCTRL         &to 0   &kp BACKSPACE    &dt_space_enter  &to 1   &kp RG(A)        &kp RG(C)         &kp RG(P)
+&dt_r_capsw  &kp A   &hmr LCTRL S  &hml LALT D  &hml RIGHT_GUI F  &kp G                                     &kp H   &hmr LEFT_GUI J  &hmr RIGHT_ALT K  &hmr RCTRL L  &kp SEMI  &kp SQT
+&kp TAB      &kp Z   &kp X         &kp C        &kp V             &kp B   &kp C_MUTE       &none            &kp N   &kp M            &kp COMMA         &kp DOT       &kp FSLH  &dt_r_capsw
+                     &kp LGUI      &kp LALT     &kp LCTRL         &to 0   &kp BACKSPACE    &mt ENTER SPACE  &to 1   &kp RG(A)        &kp RG(C)         &kp RG(P)
             >;
 
             sensor-bindings =
