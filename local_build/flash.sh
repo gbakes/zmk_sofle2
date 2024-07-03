@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /Users/georgebaker/Documents/2.\ Projects/zmk_sofle2/local_build
+cd /Users/george.baker/Library/Mobile Documents/com~apple~CloudDocs/Documents/2. Projects/zmk_sofle2/local_build
 sh download_artifact.sh
 directory="/Volumes/NICENANO"
 
