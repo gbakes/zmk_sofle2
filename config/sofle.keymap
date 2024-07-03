@@ -106,7 +106,7 @@
 &kp ESC      &kp Q   &kp W         &kp E        &kp R             &kp T                                     &kp Y   &kp U            &kp I             &kp O         &kp P     &kp BSPC
 &kp TAB      &kp A   &hmr LCTRL S  &hml LALT D  &hml RIGHT_GUI F  &kp G                                     &kp H   &hmr LEFT_GUI J  &hmr RIGHT_ALT K  &hmr RCTRL L  &kp SEMI  &kp SQT
 &dt_l_capsw  &kp Z   &kp X         &kp C        &kp V             &kp B   &kp C_MUTE       &none            &kp N   &kp M            &kp COMMA         &kp DOT       &kp FSLH  &dt_r_capsw
-                     &kp LGUI      &kp LALT     &kp LCTRL         &to 0   &kp BACKSPACE    &dt_space_enter  &to 1   &kp RCTRL        &kp RALT          &kp RGUI
+                     &kp LGUI      &kp LALT     &kp LCTRL         &to 0   &kp BACKSPACE    &dt_space_enter  &to 1   &kp RG(A)        &kp RG(C)         &kp RG(P)
             >;
 
             sensor-bindings =
@@ -166,11 +166,11 @@
              */
 
             bindings = <
-&trans  &none  &none              &none           &none             &none                              &none  &none     &none     &none      &none  &trans
-&trans  &none  &none              &none           &none             &none                              &none  &none     &kp UP    &none      &none  &trans
-&trans  &none  &hml LCTRL C_PREV  &hml LALT C_PP  &hml LGUI C_NEXT  &none                              &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &trans
-&trans  &none  &none              &none           &none             &none  &bootloader    &bootloader  &none  &none     &none     &none      &none  &trans
-               &trans             &trans          &trans            &to 0  &trans         &trans       &to 2  &trans    &trans    &trans
+&trans  &none  &none              &none           &none             &none                              &none  &none                   &none     &none              &none  &trans
+&trans  &none  &none              &none           &none             &none                              &none  &kp RG(RS(LEFT_ARROW))  &kp UP    &kp RG(RS(RIGHT))  &none  &trans
+&trans  &none  &hml LCTRL C_PREV  &hml LALT C_PP  &hml LGUI C_NEXT  &none                              &none  &kp LEFT                &kp DOWN  &kp RIGHT          &none  &trans
+&trans  &none  &none              &none           &none             &none  &bootloader    &bootloader  &none  &kp RS(RA(LEFT_ARROW))  &none     &kp RA(RS(RIGHT))  &none  &trans
+               &trans             &trans          &trans            &to 0  &trans         &trans       &to 2  &trans                  &trans    &trans
             >;
 
             sensor-bindings =
