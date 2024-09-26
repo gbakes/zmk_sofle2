@@ -1,6 +1,9 @@
 #!/bin/bash
 cd /Users/george.baker/Library/Mobile Documents/com~apple~CloudDocs/Documents/2. Projects/zmk_sofle2/local_build
-sh download_artifact.sh
+
+sh download_artifact.sh & download_pid=$!
+wait $download_pid
+
 directory="/Volumes/NICENANO"
 
 # Check if the directory exists
