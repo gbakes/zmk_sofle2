@@ -169,7 +169,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                              &none               &kp RG(RS(LEFT_ARROW))  &kp UP            &kp RG(RS(RIGHT))  &none          &trans
 &trans  &trans  &trans  &trans  &trans  &trans                              &kp RG(LEFT_ARROW)  &kp LEFT                &kp DOWN          &kp RIGHT          &kp RG(RIGHT)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &bootloader    &bootloader  &none               &kp RS(RA(LEFT_ARROW))  &none             &kp RA(RS(RIGHT))  &none          &trans
-                &trans  &trans  &trans  &trans  &trans         &trans       &trans              &trans                  &trans            &trans
+                &trans  &trans  &trans  &trans  &trans         &trans       &trans              &trans                  &trans            &to 3
             >;
 
             sensor-bindings =
@@ -183,7 +183,7 @@
 &kp ESC    &kp Q         &kp W         &kp E     &kp R     &kp T                     &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB    &kp A         &kp S         &kp D     &kp F     &kp G                     &trans  &trans  &trans  &trans  &trans  &trans
 &kp RSHFT  &kp Z         &kp X         &kp C     &kp V     &kp B   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &kp LCTRL     &kp LALT  &kp LGUI  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                         &kp LCTRL     &kp LALT  &kp LGUI  &trans  &trans    &trans  &trans  &trans  &trans  &to 0
             >;
         };
     };
