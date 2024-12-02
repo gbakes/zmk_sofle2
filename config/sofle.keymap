@@ -176,5 +176,15 @@
                 <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>,
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
+
+        layer_3 {
+            bindings = <
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &trans    &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &kp Q         &kp W         &kp E     &kp R     &kp T                     &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &kp A         &kp S         &kp D     &kp F     &kp G                     &trans  &trans  &trans  &trans  &trans  &trans
+&kp RSHFT  &kp Z         &kp X         &kp C     &kp V     &kp B   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                         &kp LCTRL     &kp LALT  &kp LGUI  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
