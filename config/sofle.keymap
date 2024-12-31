@@ -133,11 +133,11 @@
              */
 
             bindings = <
-&trans  &kp AMPERSAND  &kp LESS_THAN         &mt TILDE EXCL  &kp GREATER_THAN       &kp ASTRK                               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp PERCENT    &kp LEFT_BRACE        &dt_sl_bs       &kp RIGHT_BRACE        &kp HASH                                &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp AT         &kp LEFT_PARENTHESIS  &kp DOT         &kp RIGHT_PARENTHESIS  &kp PIPE                                &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp CARET      &kp LEFT_BRACKET      &mt PLUS EQUAL  &kp RIGHT_BRACKET      &mt MINUS UNDERSCORE  &none     &none   &trans  &trans  &trans  &trans  &trans  &trans
-                       &trans                &trans          &trans                 &trans                &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp AMPERSAND  &kp LESS_THAN         &mt TILDE EXCL    &kp GREATER_THAN       &kp ASTRK                               &trans  &trans            &trans             &trans     &trans  &trans
+&trans  &kp PERCENT    &kp LEFT_BRACE        &dt_sl_bs         &kp RIGHT_BRACE        &kp HASH                                &trans  &trans            &trans             &trans     &trans  &trans
+&trans  &kp AT         &kp LEFT_PARENTHESIS  &mt TILDE PERIOD  &kp RIGHT_PARENTHESIS  &kp PIPE                                &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE  &trans  &trans
+&trans  &kp CARET      &kp LEFT_BRACKET      &mt PLUS EQUAL    &kp RIGHT_BRACKET      &mt MINUS UNDERSCORE  &none     &none   &trans  &trans            &trans             &trans     &trans  &trans
+                       &trans                &trans            &trans                 &trans                &trans    &trans  &trans  &trans            &trans             &trans
             >;
 
             sensor-bindings =
