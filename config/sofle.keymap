@@ -74,6 +74,8 @@
             label = "DELSCAPE";
             #binding-cells = <0>;
             bindings = <&mt DELETE DELETE>, <&kp ESC>;
+
+            tapping-term-ms = <200>;
         };
     };
 
