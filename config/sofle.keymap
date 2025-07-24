@@ -111,11 +111,11 @@
              */
 
             bindings = <
-&kp GRAVE    &kp N1             &kp N2        &kp N3       &kp N4            &mt F5 N5                           &kp N6       &mt N6 N7        &kp N8            &kp N9        &kp N0                      &mt C_POWER MINUS
-&kp TAB      &kp Q              &kp W         &kp E        &kp R             &kp T                               &kp Y        &kp U            &kp I             &kp O         &kp P                       &kp BSPC
-&kp ESC      &hml LEFT_SHIFT A  &hml LCTRL S  &hml LALT D  &hml RIGHT_GUI F  &kp G                               &kp H        &hmr LEFT_GUI J  &hmr RIGHT_ALT K  &hmr RCTRL L  &hmr RIGHT_SHIFT SEMICOLON  &kp SQT
-&dt_l_capsw  &kp Z              &kp X         &kp C        &kp V             &kp B      &kp C_MUTE    &none      &kp N        &kp M            &kp COMMA         &kp DOT       &kp FSLH                    &dt_r_capsw
-                                &kp LGUI      &kp LALT     &kp LCTRL         &lt 2 TAB  &delscape     &kp SPACE  &lt 1 ENTER  &mt RG(S) RG(A)  &kp RG(C)         &kp RG(V)
+&kp GRAVE    &kp N1             &kp N2        &kp N3       &kp N4            &mt F5 N5                               &kp N6       &mt N6 N7        &kp N8            &kp N9        &kp N0                      &mt C_POWER MINUS
+&kp TAB      &kp Q              &kp W         &kp E        &kp R             &kp T                                   &kp Y        &kp U            &kp I             &kp O         &kp P                       &kp BSPC
+&kp ESC      &hml LEFT_SHIFT A  &hml LCTRL S  &hml LALT D  &hml RIGHT_GUI F  &kp G                                   &kp H        &hmr LEFT_GUI J  &hmr RIGHT_ALT K  &hmr RCTRL L  &hmr RIGHT_SHIFT SEMICOLON  &kp SQT
+&dt_l_capsw  &kp Z              &kp X         &kp C        &kp V             &kp B      &kp C_MUTE        &none      &kp N        &kp M            &kp COMMA         &kp DOT       &kp FSLH                    &dt_r_capsw
+                                &kp LGUI      &kp LALT     &kp LCTRL         &lt 2 TAB  &mt ESC DELETE    &kp SPACE  &lt 1 ENTER  &mt RG(S) RG(A)  &kp RG(C)         &kp RG(V)
             >;
 
             sensor-bindings =
