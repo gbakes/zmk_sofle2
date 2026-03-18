@@ -17,10 +17,6 @@ manifest:
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
-    # urob's helpers (key-labels, behavior macros)
-    - name: zmk-helpers
-      remote: urob
-      revision: v0.3
     # auto-layer (num-word)
     - name: zmk-auto-layer
       remote: urob
