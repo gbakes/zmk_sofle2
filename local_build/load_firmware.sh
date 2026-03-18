@@ -36,7 +36,8 @@ case "$user_input_lower" in
 
         if [ -n "$left_firmware_file" ]; then
             echo "Flashing file: $left_firmware_file"
-            mv $left_firmware_file $directory
+            xattr -c "$left_firmware_file" 2>/dev/null
+            dd if="$left_firmware_file" of="$directory/firmware.uf2" bs=4k
         else
             echo "No matching file found with extension '$file_extension'"
             exit 1
@@ -55,7 +56,8 @@ case "$user_input_lower" in
 
         if [ -n "$right_firmware_file" ]; then
             echo "Flashing file: $right_firmware_file"
-            mv $right_firmware_file $directory
+            xattr -c "$right_firmware_file" 2>/dev/null
+            dd if="$right_firmware_file" of="$directory/firmware.uf2" bs=4k
         else
             echo "No matching file found with extension '$file_extension'"
             exit 1
