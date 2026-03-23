@@ -19,22 +19,26 @@
 #define NUM  2
 #define GAME 3
 
-#define HM_TAPPING_TERM 280
+#define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 200
 #define HM_PRIOR_IDLE 150
 
 / {
     behaviors {
         // Homerow mods - left hand (ctrl, alt, gui)
+        // Uses balanced + positional hold-tap + hold-trigger-on-release
         hm_l: hm_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
+
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
         };
 
         // Homerow mods - right hand (ctrl, alt, gui)
@@ -43,34 +47,41 @@
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
+
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
         };
 
-        // Homerow shift - left hand (tap-preferred, fast, no hold-trigger-on-release)
+        // Homerow shift - left hand (faster, NO hold-trigger-on-release)
         hm_shift_l: hm_shift_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
-            flavor = "tap-preferred";
-            tapping-term-ms = <175>;
+            flavor = "balanced";
+            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
+
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
         };
 
-        // Homerow shift - right hand (tap-preferred, fast, no hold-trigger-on-release)
+        // Homerow shift - right hand (faster, NO hold-trigger-on-release)
         hm_shift_r: hm_shift_r {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
-            flavor = "tap-preferred";
-            tapping-term-ms = <175>;
+            flavor = "balanced";
+            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
+
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
         };
 
         dt_r_capsw: dt_r_capsw {
