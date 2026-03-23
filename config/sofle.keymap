@@ -55,32 +55,28 @@
             hold-trigger-on-release;
         };
 
-        // Homerow shift - left hand (faster tapping term, no hold-trigger-on-release)
+        // Homerow shift - left hand (tap-preferred, fast, no hold-trigger-on-release)
         hm_shift_l: hm_shift_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
-            flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <175>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
-            hold-trigger-key-positions = <KEYS_R NUMROW THUMBS>;
         };
 
-        // Homerow shift - right hand (faster tapping term, no hold-trigger-on-release)
+        // Homerow shift - right hand (tap-preferred, fast, no hold-trigger-on-release)
         hm_shift_r: hm_shift_r {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
-            flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <175>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
-            hold-trigger-key-positions = <KEYS_L NUMROW THUMBS>;
         };
 
         dt_r_capsw: dt_r_capsw {
