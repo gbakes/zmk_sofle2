@@ -19,9 +19,9 @@
 #define NUM  2
 #define GAME 3
 
-#define HM_TAPPING_TERM 300
+#define HM_TAPPING_TERM 280
 #define HM_TAPPING_TERM_FAST 200
-#define HM_PRIOR_IDLE 150
+#define HM_PRIOR_IDLE 200
 
 / {
     behaviors {
